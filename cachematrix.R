@@ -52,7 +52,7 @@ cacheSolve <- function(x, ...) {
       } else {
             ## Otherwise, compute inverse matrix and set it in matrix created
             ## with makeCacheMatrix
-            inv <- solve(x$get())
+            inv <- solve(x$get(), ...)
             x$setInverse(inv)
             inv
       }
